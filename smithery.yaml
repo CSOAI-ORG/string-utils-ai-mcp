@@ -1,0 +1,10 @@
+name: string-utils-ai-mcp
+description: "MEOK AI Labs — String manipulation and transformation tools powered by MEOK AI Labs."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/string-utils-ai-mcp
+license: MIT
+categories: [Utilities, Text Processing]
+tags: [string-processing, text-manipulation, string-operations, text-utilities]
+runtime: python
+entrypoint: server.py
