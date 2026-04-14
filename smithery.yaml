@@ -1,10 +1,55 @@
 name: string-utils-ai-mcp
-description: "MEOK AI Labs — String manipulation and transformation tools powered by MEOK AI Labs."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/string-utils-ai-mcp
-license: MIT
-categories: [Utilities, Text Processing]
-tags: [string-processing, text-manipulation, string-operations, text-utilities]
-runtime: python
-entrypoint: server.py
+description: Slugification, case conversion, smart truncation, and number extraction.
+version: 1.0.0
+tools:
+- name: slugify
+  description: Convert text to a URL-friendly slug.
+  parameters:
+  - name: text
+    type: string
+    required: true
+  - name: separator
+    type: string
+    required: false
+  - name: max_length
+    type: integer
+    required: false
+  - name: lowercase
+    type: boolean
+    required: false
+- name: camel_to_snake
+  description: Convert between camelCase, snake_case, kebab-case, and PascalCase.
+  parameters:
+  - name: text
+    type: string
+    required: true
+  - name: direction
+    type: string
+    required: false
+- name: truncate_smart
+  description: Smartly truncate text at word boundaries with a suffix.
+  parameters:
+  - name: text
+    type: string
+    required: true
+  - name: max_length
+    type: integer
+    required: false
+  - name: suffix
+    type: string
+    required: false
+  - name: preserve_words
+    type: boolean
+    required: false
+- name: extract_numbers
+  description: Extract all numbers from text.
+  parameters:
+  - name: text
+    type: string
+    required: true
+  - name: include_decimals
+    type: boolean
+    required: false
+  - name: include_negative
+    type: boolean
+    required: false

@@ -1,23 +1,94 @@
 {
   "name": "string-utils-ai-mcp",
-  "description": "MEOK AI Labs \u2014 String manipulation and transformation tools powered by MEOK AI Labs.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/string-utils-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "Slugification, case conversion, smart truncation, and number extraction.",
+  "version": "1.0.0",
   "tools": [
-    "slugify",
-    "camel_to_snake",
-    "truncate_smart",
-    "extract_numbers"
-  ],
-  "categories": [
-    "Utilities",
-    "Text Processing"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "slugify",
+      "description": "Convert text to a URL-friendly slug.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "separator": {
+            "type": "string"
+          },
+          "max_length": {
+            "type": "integer"
+          },
+          "lowercase": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "camel_to_snake",
+      "description": "Convert between camelCase, snake_case, kebab-case, and PascalCase.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "truncate_smart",
+      "description": "Smartly truncate text at word boundaries with a suffix.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "max_length": {
+            "type": "integer"
+          },
+          "suffix": {
+            "type": "string"
+          },
+          "preserve_words": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "extract_numbers",
+      "description": "Extract all numbers from text.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "include_decimals": {
+            "type": "boolean"
+          },
+          "include_negative": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    }
+  ]
 }
