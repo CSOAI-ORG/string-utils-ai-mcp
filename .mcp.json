@@ -1,6 +1,6 @@
 {
   "name": "string-utils-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

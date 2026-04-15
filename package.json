@@ -1,7 +1,7 @@
 {
   "name": "string-utils-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs — string utils MCP Server",
+  "description": "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built by MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "string utils",
@@ -9,10 +9,22 @@
     "homepage": "https://meok.ai",
     "repository": "https://github.com/CSOAI-ORG/string-utils-ai-mcp",
     "runtime": "python",
-    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "meok-ai-labs",
+      "ai-tools"
+    ]
   },
-  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "meok-ai-labs"
+  ],
   "author": "MEOK AI Labs <nicholas@meok.ai>",
   "license": "MIT",
-  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/string-utils-ai-mcp"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/string-utils-ai-mcp"
+  }
 }
