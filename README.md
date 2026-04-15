@@ -1,24 +1,71 @@
-# String Utils AI MCP Server
+# String Utils Ai
 
-Slugification, case conversion, smart truncation, and number extraction.
+> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs MCP Server
+
+String Utils AI MCP Server
+
+## Installation
+
+```bash
+pip install string-utils-ai-mcp
+```
+
+## Usage
+
+```bash
+# Run standalone
+python server.py
+
+# Or via MCP
+mcp install string-utils-ai-mcp
+```
 
 ## Tools
 
-- **slugify**
-- **camel_to_snake**
-- **truncate_smart**
-- **extract_numbers**
+### `slugify`
+Convert text to a URL-friendly slug.
 
-## Quick Start
+**Parameters:**
+- `text` (str)
+- `separator` (str)
+- `max_length` (int)
+- `lowercase` (bool)
 
-```bash
-pip install mcp
-python server.py
-```
+### `camel_to_snake`
+Convert between camelCase, snake_case, kebab-case, and PascalCase.
 
-## Rate Limits
+**Parameters:**
+- `text` (str)
+- `direction` (str)
 
-- Free tier: 50 calls/day per tool
-- Upgrade: https://meok.ai/pricing
+### `truncate_smart`
+Smartly truncate text at word boundaries with a suffix.
 
-Built by [MEOK AI Labs](https://meok.ai)
+**Parameters:**
+- `text` (str)
+- `max_length` (int)
+- `suffix` (str)
+- `preserve_words` (bool)
+
+### `extract_numbers`
+Extract all numbers from text.
+
+**Parameters:**
+- `text` (str)
+- `include_decimals` (bool)
+- `include_negative` (bool)
+
+
+## Authentication
+
+Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+
+## Links
+
+- **Website**: [meok.ai](https://meok.ai)
+- **GitHub**: [CSOAI-ORG/string-utils-ai-mcp](https://github.com/CSOAI-ORG/string-utils-ai-mcp)
+- **PyPI**: [pypi.org/project/string-utils-ai-mcp](https://pypi.org/project/string-utils-ai-mcp/)
+
+## License
+
+MIT — MEOK AI Labs
