@@ -1,5 +1,5 @@
 name: string-utils-ai-mcp
-description: Slugification, case conversion, smart truncation, and number extraction.
+description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools:
 - name: slugify

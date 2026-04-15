@@ -1,6 +1,6 @@
 {
   "name": "string-utils-ai-mcp",
-  "description": "Slugification, case conversion, smart truncation, and number extraction.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
