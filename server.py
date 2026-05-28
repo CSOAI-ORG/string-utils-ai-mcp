@@ -5,7 +5,6 @@ String manipulation and transformation tools powered by MEOK AI Labs.
 
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import re
@@ -13,6 +12,15 @@ import time
 import unicodedata
 from collections import defaultdict
 from mcp.server.fastmcp import FastMCP
+
+STRIPE_199 = "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"
+
+def _add_upgrade_tail(response, tier="free"):
+    """Append upgrade nudge to free-tier success responses."""
+    if isinstance(response, dict) and tier == "free":
+        response["_upgrade_note"] = "Pro tier: unlimited calls + priority support. Upgrade: " + STRIPE_199
+    return response
+
 
 mcp = FastMCP("string-utils-ai", instructions="MEOK AI Labs MCP Server")
 
@@ -41,7 +49,7 @@ def slugify(text: str, separator: str = "-", max_length: int = 80, lowercase: bo
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("slugify")
     slug = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
@@ -64,7 +72,7 @@ def camel_to_snake(text: str, direction: str = "camel_to_snake", api_key: str = 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("camel_to_snake")
     # First normalize to words
@@ -102,7 +110,7 @@ def truncate_smart(text: str, max_length: int = 100, suffix: str = "...", preser
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("truncate_smart")
     if len(text) <= max_length:
@@ -132,7 +140,7 @@ def extract_numbers(text: str, include_decimals: bool = True, include_negative: 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("extract_numbers")
     if include_negative and include_decimals:
@@ -160,5 +168,8 @@ def extract_numbers(text: str, include_decimals: bool = True, include_negative: 
     return {"numbers": numbers, "count": len(numbers), "statistics": stats}
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
