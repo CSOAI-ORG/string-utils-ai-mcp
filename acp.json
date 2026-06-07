@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "string-utils-ai-mcp",
+    "description": "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "string-utils-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "slugify",
+      "camel_to_snake",
+      "truncate_smart",
+      "extract_numbers"
+    ]
+  }
+}

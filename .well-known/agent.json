@@ -1,0 +1,59 @@
+{
+  "name": "string-utils-ai-mcp",
+  "description": "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built",
+  "url": "https://proofof.ai/scorecard/string-utils-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "slugify",
+      "name": "Slugify",
+      "description": "slugify via string-utils-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "camel_to_snake",
+      "name": "Camel To Snake",
+      "description": "camel_to_snake via string-utils-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "truncate_smart",
+      "name": "Truncate Smart",
+      "description": "truncate_smart via string-utils-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "extract_numbers",
+      "name": "Extract Numbers",
+      "description": "extract_numbers via string-utils-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
