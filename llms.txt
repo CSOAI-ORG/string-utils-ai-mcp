@@ -1,0 +1,33 @@
+# string-utils-ai-mcp
+# > By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs MCP Server
+
+## Install
+```bash
+pip install string-utils-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `slugify`
+Convert text to a URL-friendly slug.
+
+### `camel_to_snake`
+Convert between camelCase, snake_case, kebab-case, and PascalCase.
+
+### `truncate_smart`
+Smartly truncate text at word boundaries with a suffix.
+
+### `extract_numbers`
+Extract all numbers from text.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

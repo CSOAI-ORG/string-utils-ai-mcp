@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "string-utils-ai-mcp"
-version = "1.0.0"
+version = "1.0.6"
 description = "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -21,7 +21,7 @@ Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/string-utils-ai-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-only-include = ["server.py"]
+only-include = ["server.py", "auth_middleware.py"]
 
 [project.scripts]
 string_utils_ai_mcp = "server:main"

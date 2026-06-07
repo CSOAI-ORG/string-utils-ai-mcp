@@ -1,0 +1,9 @@
+# string-utils-ai-mcp - Auto-trigger Rules
+
+When the user asks about string utils, use string-utils-ai-mcp tools: slugify, camel_to_snake, truncate_smart, extract_numbers
+
+> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs MCP Server
+
+Install: `pip install string-utils-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.
