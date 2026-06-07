@@ -1,7 +1,7 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/string-utils-ai-mcp",
-  "description": "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built by MEOK AI Labs.",
+  "description": "String Utils Ai tools for AI agents. Capabilities: slugify, camel to snake, truncate smart. Built",
   "version": "1.0.6",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/string-utils-ai-mcp",
@@ -9,12 +9,13 @@
   },
   "packages": [
     {
-      "registry_type": "pypi",
       "identifier": "string-utils-ai-mcp",
       "version": "1.0.6",
       "transport": {
         "type": "stdio"
-      }
+      },
+      "registryType": "pypi",
+      "runtimeHint": "python"
     }
   ]
 }
