@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .env
 *.db
+
+# Auto-added during alignment sweep
+dist/string_utils_ai_mcp-1.0.8-py3-none-any.whl
+dist/string_utils_ai_mcp-1.0.8.tar.gz
+dist/string_utils_ai_mcp-1.0.11-py3-none-any.whl
+dist/string_utils_ai_mcp-1.0.11.tar.gz
