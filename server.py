@@ -1,4 +1,6 @@
 """
+Buy Pro: https://www.csoai.org/checkout
+
 String Utils AI MCP Server
 String manipulation and transformation tools powered by MEOK AI Labs.
 """
